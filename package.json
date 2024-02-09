@@ -1,0 +1,51 @@
+{
+  "name": "logging-queue-interfaces",
+  "version": "1.0.17",
+  "description": "Library containing queue schema definitions",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "echo 'no tests'",
+    "build": "npx tsc",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/archiveprotocol/logging-queue-interfaces.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archiveprotocol/logging-queue-interfaces/issues"
+  },
+  "homepage": "https://github.com/archiveprotocol/logging-queue-interfaces",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": ">=6",
+    "jest": "^29.5.0",
+    "lint-staged": ">=10",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": "^16.19.0",
+    "yarn": "1.22.19"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint ./src --ext .ts",
+      "prettier --ignore-unknown --write"
+    ]
+  },
+  "packageManager": "yarn@3.6.3"
+}
